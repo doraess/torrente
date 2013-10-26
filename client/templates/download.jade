@@ -1,0 +1,38 @@
+.ink-row.ink-l100
+  .ink-row.ink-l40
+    .ink-l100
+      span.title {{download.name}}
+  .ink-row.ink-l30
+    .ink-l40
+      .meter
+        span(style="width: {{download.done}}%; background-color: {{download.color}}").meter 
+        span.label {{download.done}}%
+    .ink-l20
+      i.icon-upload.icon-large
+      span {{download.up}}
+    .ink-l20
+      i.icon-download.icon-large
+      span {{download.down}}
+    .ink-l20
+      span {{download.have}}
+  .ink-row.ink-l30
+    .ink-l33
+      span.eta {{download.eta}}
+    .ink-l33
+      span.status {{download.status}}
+    .ink-l33
+      .ink-row
+        .ink-l20
+          span.title {{download.id}}
+        .ink-l20
+          a(href='/stop/{{download.id}}').pause
+            i.icon-pause
+        .ink-l20
+          a(href='/start/{{download.id}}').play
+            i.icon-play
+        .ink-l20
+          a(href='/remove/{{download.id}}').remove
+            i.icon-remove
+        .ink-l20
+          a(href='/remove_files/{{download.id}}').remove
+            i.icon-remove-sign

@@ -1,0 +1,122 @@
+// Example Stylus file
+
+body, html
+  height 100%
+
+body
+  //font normal 1em sans-serif
+  //background linear-gradient(top, #dfdfdf, #fff)
+
+  .ink-container
+    width 1200px !important
+    padding 0px !important
+  .ink-row
+    margin-left 0px !important
+  
+#sidebar
+  box-sizing border-box
+  padding 10px
+
+#content
+  box-sizing border-box
+  padding 10px
+
+#list
+  font-size 12px
+  overflow-y scroll
+  height 450px
+  line-height 15px
+  span
+    box-sizing border-box
+    padding 5px//overflow-x hidden
+    
+b
+  color red
+  
+a.play:hover
+  color #0f0
+a.pause:hover
+  color #00f
+a.remove:hover
+  color #f00
+
+#video_list
+  font-size 12px
+  overflow-y auto
+  height 450px
+  line-height 25px
+  .avi, .AVI
+    color #c00
+  .mkv, .MKV
+    color #0c0
+  .mpg, .mpeg
+    color #fa0
+  .mp4, .MP4
+    color #00c
+  .m4v, .M4V
+    color #888
+  .divx, .DIVX
+    color #cc0
+   
+  
+#transmission_status
+  font-size 10px
+  overflow-y auto
+  height 450px
+  line-height 25px
+  //text-align center
+  span
+    box-sizing border-box
+    padding 5px
+    //border 1px solid #000
+    
+  i.up
+    color #f00
+  i.down
+    color #0f0
+
+  span.title
+    //display inline-block
+    text-align left
+    overflow-x hidden
+    //height 35px !important
+  a
+    text-decoration none
+    color #aaa
+
+    
+    
+  .meter
+    background-color #ddd
+    position relative  
+    -moz-border-radius 25px
+    -webkit-border-radius 25px
+    border-radius 25px
+    height 12px
+    margin-top 6px
+    width 90%
+  	-webkit-box-shadow  5px 5px 5px #000
+  	-moz-box-shadow     5px 5px 5px #000
+  	box-shadow          5px 5px 5px #000
+
+  .meter > span
+    display block
+    position relative  
+    //background-color #0a0
+  .meter > span.label
+    position relative  
+    background-color rgba(255,255,255,0.0)
+    color #fff
+    z-index 1000
+    margin-top -23px
+    font-size 9px
+    text-align center
+    
+footer
+  text-align center
+  position absolute
+  bottom 0px
+  left 0px
+  width 100%
+  max-height 50px !important
+  font-size 10px !important

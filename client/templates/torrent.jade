@@ -1,0 +1,18 @@
+p
+  .ink-row.ink-l100
+    .ink-l50
+      a(href='{{torrent.link}}').ink-label.info.invert {{{torrent.name}}}
+    .ink-row.ink-l50
+      .ink-l20 
+        span {{torrent.category}}
+      .ink-l20.ink-label.info
+        i.icon-hdd
+        span {{torrent.size}}
+      .ink-l10 
+        i.icon-users
+        span {{torrent.leechers}}
+      .ink-l10
+        span {{torrent.downloads}}
+      .ink-l10
+        a(href='/download/{{torrent.name}}/{{torrent.id}}').ink-label.info
+          i.icon-share-alt

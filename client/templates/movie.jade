@@ -1,0 +1,29 @@
+.ink-row.ink-l100
+  .ink-row.ink-l50
+    .ink-l10
+      span.type
+      //span {{file.extension}}
+     .ink-l80
+      span {{file.name}}
+  .ink-l10
+    span.ink-label.info {{file.size}}
+  .ink-l20
+    .ink-l25
+      span.ink-label.info.invert {{file.items}} 
+    .ink-l25
+      span.ink-label.info.invert {{file.permissions.user}} 
+    .ink-l25
+      span.ink-label.info.invert {{file.permissions.group}} 
+    .ink-l25
+      span.ink-label.info.invert {{file.permissions.other}}
+  .ink-l10
+    .ink-row
+      .ink-l33
+        a(href='/play_movie/{{file.name}}').play
+          i.icon-play
+      .ink-l33
+        a(href='/remove_movie/{{file.name}}').remove
+          i.icon-remove
+      //.ink-l33
+      //  a(href='/download_movie/{{file.name}}').pause
+      //    i.icon-cloud-download
